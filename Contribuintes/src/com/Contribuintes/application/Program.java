@@ -44,20 +44,18 @@ public class Program {
 			}
 
 		}
-		
+
 		System.out.println("TAXES PAID: ");
-		
+
 		Double total = 0.0;
-		
-		for(TaxPayer tp : list) {
-			
+
+		for (TaxPayer tp : list) {
+
 			System.out.println(tp.getName() + ", $ " + String.format("%.2f", tp.tax()));
-			
-			total  += tp.tax();
+
+			total += tp.tax();
 		}
 		System.out.println("TOTAL TAXES: $ " + String.format("%.2f", total));
-		
-		
 
 		sc.close();
 	}
